@@ -64,6 +64,11 @@ function nextSequence() {
   level++;
   $("#level-title").text("Level " + level);
 
+
+  // add class to remove the description after first key press
+  $("#level-description").addClass("hide-display");
+
+  
   var randomNumber = Math.floor(Math.random() * 4);
   let randomChosenColour = buttonColours[randomNumber];
   console.log("Random colour: " + randomChosenColour);
